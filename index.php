@@ -13,6 +13,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Website thương mại</title>
 	<link href="./css/index.css" rel="stylesheet" />
+	<link href="./css/home.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -94,56 +95,103 @@ session_start();
 		<?php
 		cart();
 		?>
-		<form class="d-flex me-auto" style="width: 40%; margin: auto; margin-top:15px" action="search_product.php" method="get">
-			<input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" name="search_data">
-			<input type="submit" value="Search" class="btn btn-outline-dark" name="search_data_product">
-		</form>
+	</div>
+	<div class="">
+		<div class="" style="margin: 20px">
+			<h1>Make Your Home
+				<br> Modern Design.
+			</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus modi illum cumque velit consectetur?</p>
+			<div id="btn1"><button>
+					<a href="./display_all.php" style="text-decoration: none;">
+						Shop Now
+					</a>
+				</button></div>
+		</div>
 	</div>
 
+	<!-- main content -->
+	<div class="main-content">
+	</div>
+	<!-- main content -->
 
-	<div class="row" style="margin: 20px 0;">
-		<h4 class='text-center'>Product</h4>
-		<!-- sidenav -->
-		<div class="col-md-2 bg-secondary mb-2" style="padding: 0">
-			<!-- brands -->
-			<ul class="navbar-nav me-auto text-center">
-				<li class="nav-item bg-info mb-1">
-					<a href="#" class="nav-link text-light">
-						<h4>Delivery Brands</h4>
-					</a>
-				</li>
-				<?php
-				getBrands();
-				?>
-			</ul>
-
-			<!-- categorys -->
-			<ul class="navbar-nav me-auto text-center">
-				<li class="nav-item bg-info mb-1">
-					<a href="#" class="nav-link text-light">
-						<h4>Category</h4>
-					</a>
-				</li>
-				<?php
-				getCategory();
-
-				?>
-			</ul>
-		</div>
-
-		<!-- products -->
-		<div class="col-md-10">
-			<div class="row">
-				<?php
-				getProducts();
-				// getIPAddress();
-				getUniqueCate();
-				getUniqueBrand();
-				$ip = getIPAddress();
-				?>
+	<!-- card1 -->
+	<div class="container">
+		<h3 class="text-center" style="padding-top: 30px;">SERVICES WE OFFER</h3>
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card">
+					<img src="./images/about.png" alt="" class="card image-top" height="200px">
+					<div class="card-body">
+						<h5 class="card-titel text-center">CUSTOM MENUS</h5>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+						<div id="btn2" class="text-center"><button>View More</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card">
+					<img src="./images/ca.jpg" alt="" class="card image-top" height="200px">
+					<div class="card-body">
+						<h5 class="card-titel text-center">SMARTEST WAY</h5>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+						<div id="btn2" class="text-center"><button>View More</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card">
+					<img src="./images/rau.png" alt="" class="card image-top" height="200px">
+					<div class="card-body">
+						<h5 class="card-titel text-center">USER FRIENDLEY</h5>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+						<div id="btn2" class="text-center"><button>View More</button></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- card1 -->
+
+	<!-- card2 -->
+	<div class="container">
+		<div class="row" style="margin-top: 100px;">
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card" id="tpc">
+					<img src="./image/ch.png" alt="" class="card image-top">
+					<div class="card-img-overlay">
+						<h4 class="card-titel">Best Chair</h4>
+						<p class="card-text">Lorem ipsum dolor.</p>
+						<div id="btn2"><button>View More</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card" id="tpc">
+					<img src="./image/sf.png" alt="" class="card image-top">
+					<div class="card-img-overlay">
+						<h4 class="card-titel">Sofa</h4>
+						<p class="card-text">Lorem ipsum dolor.</p>
+						<div id="btn2"><button>View More</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 py-3 py-md-0">
+				<div class="card" id="tpc">
+					<img src="./image/work desk.png" alt="" class="card image-top">
+					<div class="card-img-overlay">
+						<h4 class="card-titel">Work Desk</h4>
+						<p class="card-text">Lorem ipsum dolor.</p>
+						<div id="btn2"><button>View More</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- card2 -->
+
+
+
 
 	<!-- Footer -->
 	<?php include("./includes/footer.php") ?>

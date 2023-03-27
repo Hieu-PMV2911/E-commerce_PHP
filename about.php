@@ -13,6 +13,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Website thương mại</title>
 	<link href="./css/index.css" rel="stylesheet" />
+	<link href="./css/home.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -75,7 +76,30 @@ session_start();
 		</nav>
 	</div>
 
-	<h2>ABOUT</h2>
+	<!-- about -->
+	<div class="container">
+		<h1 class="text-center" style="margin-top: 50px;">ABOUT</h1>
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-md-6 py-3 py-md-0">
+				<div class="card">
+					<img src="./images/about.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 py-3 py-md-0">
+				<p>Mô hình hoạt động của Thành Nam là dựa trên những thế mạnh cốt lõi, tạo ra quy trình khép kín cung cấp sản phẩm có chất lượng tốt nhất, chi phí thấp nhất không qua trung gian, đưa sản phẩm đến tay người tiêu dùng một cách nhanh nhất.
+
+
+
+					Với sự hỗ trợ, hướng dẫn trực tiếp từ các Thầy Cô Giáo Sư, Tiến Sĩ tại khoa chăn nuôi thú y và khoa Nông Học của trường Đại Học Nông Lâm TP.HCM. Chúng tôi đã xây dựng thành công hệ thống trang trại nuôi trồng hiện đại, năng suất cao và đạt tiêu chuẩn chất lượng. Mỗi ngày, Thành Nam cung cấp ra thị trường hàng chục tấn sản phẩm nông sản, thực phẩm tươi sống: thịt heo, thịt gà, trứng, cá, rau củ quả tươi sống,...
+
+
+
+					Các trang trại trồng cây lớn được đặt tại các địa phương: Lâm Đồng, Đồng Nai, Bình Thuận, Bình Dương, Bình Phước, Tây Ninh và TP.HCM. Ngoài ra, công ty còn liên kết trực tiếp với các trại nuôi trồng của các hộ nông dân ở các vùng quy hoạch nuôi trồng theo mô hình VIETGAP. Toàn bộ hệ thống chăn nuôi, sản xuất được đầu tư bài bản theo quy trình kỹ thuật chăn nuôi hoàn toàn khép kín. Chính nhờ vậy mà chúng tôi luôn chủ động, cũng như kiểm soát chất lượng vô cùng chặt chẽ và ổn định.</p>
+				<div id="btn4"><button>Read More...</button></div>
+			</div>
+		</div>
+	</div>
+	<!-- about -->
 
 	<!-- Footer -->
 	<?php include("./includes/footer.php") ?>
